@@ -1,45 +1,46 @@
 let starlight, mug, brain, dama, news, com, pic, braint, damat, newst, comt, pict, mmm, bbb, ddd, nnn, ccc, ppp;
 
 function preload(){
-  starlight = createImg('../img/IMG_6440.GIF');
+  starlight = createImg('img/IMG_6440.GIF');
 
-  mug = createImg('../img/mug.jpg');
+  mug = createImg('img/mug.jpg');
   mug.hide();
-  brain = createImg('../img/brain.jpg');
+  brain = createImg('img/brain.jpg');
   brain.hide();
-  dama = createImg('../img/dama.jpg');
+  dama = createImg('img/dama.jpg');
   dama.hide();
-  news = createImg('../img/news.jpg');
+  news = createImg('img/news.jpg');
   news.hide();
-  com = createImg('../img/com.jpg');
+  com = createImg('img/com.jpg');
   com.hide();
-  pic = createImg('../img/pic.jpg');
+  pic = createImg('img/pic.jpg');
   pic.hide();
 
   
-  braint = createImg('../img/braint.jpg');
+  braint = createImg('img/braint.jpg');
   braint.hide();
-  damat = createImg('../img/dmamt.jpg');
+  damat = createImg('img/dmamt.jpg');
   damat.hide();
-  newst = createImg('../img/newst.jpg');
+  newst = createImg('img/newst.jpg');
   newst.hide();
-  comt = createImg('../img/comt.jpg');
+  comt = createImg('img/comt.jpg');
   comt.hide();
-  pict = createImg('../img/pict.jpg');
+  pict = createImg('img/pict.jpg');
   pict.hide();
   
-  mmm = createImg('../img/mmm.jpg');
-  bbb = createImg('../img/bbb.png');
-  ddd = createImg('../img/ddd.png');
-  nnn = createImg('../img/nnn.jpg');
-  ccc = createImg('../img/ccc.png');
-  ppp = createImg('../img/ppp.jpg');
+  mmm = createImg('img/mmm.jpg');
+  bbb = createImg('img/bbb.png');
+  ddd = createImg('img/ddd.png');
+  nnn = createImg('img/nnn.jpg');
+  ccc = createImg('img/ccc.png');
+  ppp = createImg('img/ppp.jpg');
 
 } //사전 정의
 
 
 function setup(){
-  createCanvas(windowWidth, windowHeight);
+  cvs = createCanvas(windowWidth, windowHeight);
+  cvs.parent("p5jscanvas");
   
   let btn1 = mmm;
   btn1.mouseClicked(popUp);
@@ -203,4 +204,5 @@ function draw() {
   
   
 } //이미지 파일 재생
+
 
