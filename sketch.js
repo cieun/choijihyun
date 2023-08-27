@@ -39,8 +39,7 @@ function preload(){
 
 
 function setup(){
-  cvs = createCanvas(windowWidth, windowHeight);
-  cvs.parent("p5jscanvas");
+  createCanvas(windowWidth, windowHeight);
   
   let btn1 = mmm;
   btn1.mouseClicked(popUp);
